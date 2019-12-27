@@ -21,7 +21,7 @@ CarrierWave.configure do |config|
         config.fog_directory = 'blog-5-proc'
         config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/blog-5-proc'
       when 'development'
-        config.fog_directory = 'blog-5-proc'
-        config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/blog-5-proc'
+        config.fog_directory = 'blogapp-5-dev'
+        config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/blogapp-5-dev'
     end
   end
