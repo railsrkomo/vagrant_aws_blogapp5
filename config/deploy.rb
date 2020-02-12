@@ -33,12 +33,12 @@ set :log_level, :info
 namespace :deploy do
   desc 'Restart application'
   task :restart do
+    puts "ユニコーンリスタート"
     invoke 'unicorn:restart'
   end
 
   desc 'Create database'
   task :db_create do
-    puts "データベースクリエート"
     on roles(:db) do |host|
       with rails_env: fetch(:rails_env) do
         within current_path do
